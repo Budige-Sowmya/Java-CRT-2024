@@ -1,0 +1,90 @@
+Printing Stars '*' in Reverse Pyramid Shape
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Printing Stars '*' in Reverse Pyramid Shape
+
+Sample Input 0
+
+5
+Sample Output 0
+
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+Sample Input 1
+
+11
+Sample Output 1
+
+* * * * * * * * * * * 
+ * * * * * * * * * * 
+  * * * * * * * * * 
+   * * * * * * * * 
+    * * * * * * * 
+     * * * * * * 
+      * * * * * 
+       * * * * 
+        * * * 
+         * * 
+          * 
+Submissions: 80
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int n;
+10
+        n=s.nextInt();
+11
+    for(int i=n;i>=1;i--){
+12
+        for(int k=i;k<=n-1;k++){
+13
+            System.out.printf(" ");
+14
+        }
+15
+        for(int j=1;j<=i;j++){
+16
+            System.out.printf("* ");
+17
+        }
+18
+        System.out.printf("\n");
+19
+    }
+20
+    }
+21
+}
