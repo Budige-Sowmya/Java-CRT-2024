@@ -1,0 +1,127 @@
+The comparison is as: A = B, A < B, A > B
+
+Check whether it is Right or Wrong
+
+Input Format
+
+The first line contains the number of test cases t.
+
+Then there are t lines each containing a test case. Each test case contains an Integer followed by a comparison Operator which is again followed by an Integer.
+
+Constraints
+
+1 <= T <= 105
+
+-105 <= A,B <= 105
+
+Output Format
+
+For each test case, If the comparison is true print "Right" else print "Wrong".
+
+The result for each test case needs to be printed in a new line.
+
+Sample Input 0
+
+2
+5 > 4
+6 < 3
+Sample Output 0
+
+Right
+Wrong
+Submissions: 170
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+import java.text.*;
+4
+import java.math.*;
+5
+import java.util.regex.*;
+6
+​
+7
+public class Solution {
+8
+    public static void main(String args[] ) throws Exception {
+9
+        Scanner s=new Scanner(System.in);
+10
+        int t;
+11
+        t=s.nextInt();
+12
+        for(int i=1;i<=t;i++){
+13
+            if(i>1)
+14
+                System.out.println();
+15
+        int a,b;  
+16
+        char op;
+17
+        a=s.nextInt();
+18
+        op=s.next().charAt(0);
+19
+        b=s.nextInt();
+20
+        if(op=='>'){
+21
+            if(a>b)
+22
+                System.out.print("Right");
+23
+        else
+24
+            System.out.print("Wrong");
+25
+        }
+26
+        else if(op=='<')
+27
+        {
+28
+            if(a<b)
+29
+                System.out.print("Right");
+30
+            else
+31
+                System.out.print("Wrong");
+32
+        }
+33
+       else if(op=='=')
+34
+        {
+35
+            if(a==b)
+36
+                System.out.print("Right");
+37
+           else
+38
+               System.out.print("Wrong");
+39
+           }
+40
+        }
+41
+        
+42
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+43
+    }
+44
+}
