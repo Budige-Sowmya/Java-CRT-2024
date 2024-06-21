@@ -1,0 +1,139 @@
+The expression will be one of the following expressions:
+
+A + B = C, A - B = C and A * B = C.
+
+where A, B, C are three numbers, S is the sign between A and B, and Q is the '=' sign.
+
+If the expression is right print "Yes", Otherwise print the right answer of the expression.
+
+Input Format
+
+The first line contains the number of test cases t.
+
+The following lines contain t test cases. One test case per line.
+
+Each test case is in the format A S B Q C, where A,B and C are the numbers, S is the sign between A and B and Q is the '=' sign.
+
+Constraints
+
+1<= T <= 105
+
+0<= A,B <= 102
+
+-105 <= C <=105
+
+Output Format
+
+Print the result of each test case in a new line.
+
+In each test case, If the expression is right print "Yes", Otherwise print the right answer of the expression.
+
+Sample Input 0
+
+2
+5 + 10 = 15
+2 * 10 = 19
+Sample Output 0
+
+Yes
+20
+Submissions: 134
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        Scanner s=new Scanner(System.in);
+8
+        int t;
+9
+        t=s.nextInt();
+10
+        for(int i=1;i<=t;i++){
+11
+            if(i>1)
+12
+                System.out.println();
+13
+        int a,b,c,d;
+14
+        char p,q;
+15
+        a=s.nextInt();
+16
+        p=s.next().charAt(0);
+17
+        b=s.nextInt();
+18
+        q=s.next().charAt(0);   
+19
+        c=s.nextInt();
+20
+            if(p=='+'&&q=='='){
+21
+                d=a+b;
+22
+            if(d==c)
+23
+                System.out.print("Yes");
+24
+        else
+25
+            System.out.print(d);
+26
+        }
+27
+        else if(p=='-'&&q=='='){
+28
+            d=a-b;
+29
+            if(d==c)
+30
+                System.out.print("Yes");
+31
+            else
+32
+                System.out.print(d);
+33
+        }
+34
+       else if(p=='*'&&q=='=')
+35
+        {
+36
+           d=a*b;
+37
+            if(d==c)
+38
+                System.out.print("Yes");
+39
+           else
+40
+               System.out.print(d);
+41
+           }
+42
+        }
+43
+        
+44
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+45
+    }
+46
+}
