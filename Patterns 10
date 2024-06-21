@@ -1,0 +1,115 @@
+Printing Stars in Hollow Equilateral Triangle Shape
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Printing Stars in Hollow Equilateral Triangle Shape
+
+Sample Input 0
+
+6
+Sample Output 0
+
+     * 
+    * * 
+   *   * 
+  *     * 
+ *       * 
+* * * * * * 
+Sample Input 1
+
+9
+Sample Output 1
+
+        * 
+       * * 
+      *   * 
+     *     * 
+    *       * 
+   *         * 
+  *           * 
+ *             * 
+* * * * * * * * * 
+Submissions: 24
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        
+8
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+9
+        Scanner s=new Scanner(System.in);
+10
+        int n;
+11
+        n=s.nextInt();
+12
+        for(int i=0;i<n-1;i++)
+13
+        {
+14
+           for(int j=0;j<n-i-1;j++){
+15
+               System.out.printf(" ");
+16
+           } 
+17
+            if(i==0){
+18
+                System.out.printf("*");
+19
+            }else
+20
+            {
+21
+                System.out.printf("*");
+22
+            for(int j=0;j<2*i-1;j++)
+23
+            {
+24
+                System.out.printf(" ");
+25
+            }
+26
+                System.out.printf("*");
+27
+        }
+28
+            System.out.println();
+29
+    }
+30
+        for(int i=0;i<n;i++){
+31
+            System.out.printf("* ");
+32
+        }
+33
+    }
+34
+}
