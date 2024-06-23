@@ -1,0 +1,86 @@
+An e-commerce company plans to give their customers a discount for the New Years holiday. The discount will be calculated on the basis of the bill amount of the order placed. The discount amount is the sum of all the odd digits on the customer’s total bill amount. If no odd digit is present in the bill amount, then the discount will be zero. Write an algorithm to find a discount for the given total bill amount.
+
+Input Format
+
+The input consists of an integer bill amount, representing the customer’s total bill amount.
+
+Constraints
+
+0
+
+Output Format
+
+Print an integer representing the discount for the given total bill amount.
+
+Sample Input 0
+
+2514795
+Sample Output 0
+
+27
+Sample Input 1
+
+234
+Sample Output 1
+
+3
+Sample Input 2
+
+246824
+Sample Output 2
+
+0
+Submissions: 171
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+            int b,d=0,n;
+10
+    b=s.nextInt();
+11
+    while(b>0)
+12
+    {
+13
+       n=b%10;
+14
+    if(n%2!=0)
+15
+    {
+16
+      d=d+n;
+17
+    }
+18
+      b=b/10;
+19
+    }
+20
+   System.out.printf("%d\n",d);
+21
+​
+22
+    }
+23
+}
