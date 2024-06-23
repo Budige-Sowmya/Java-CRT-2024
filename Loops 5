@@ -1,0 +1,78 @@
+Though there have been more successful pirates, Blackbeard is one of the best-known and widely-feared of his time. He commanded four ships and had a pirate army of 300 at the height of his career and defeated the famous warship, HMS “Scarborough” in sea-battle. He was known for barreling into battle clutching two swords with several knives and pistols at the ready. He captured over forty merchant ships in the Caribbean and without flinching killed many prisoners. Now, Blackbeard and his three pirates found a treasure of gold coins. Long Ben too joined them. They decided to share the treasure. Blackbeard agreed to give x% share for Long Ben. He then decided to take y% share from the remaining treasure. His other pirates will share the remaining gold coins equally. Write a program to compute their share's.
+
+Input Format
+
+Input consists of 3 integers. The first input corresponds to the number of gold coins in the treasure. The second input corresponds to Ben's share percentage and the last input is Blackbeard's share percentage.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+The output consists of three integers. The first output integer corresponds to Long Ben's share. The second integer corresponds to Blackbeard's share. The last integer corresponds to other pirates share.
+
+Sample Input 0
+
+729
+65
+87
+Sample Output 0
+
+473
+222
+11
+Submissions: 218
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int T,x,y;
+10
+         T=s.nextInt();
+11
+        x=s.nextInt();
+12
+        y=s.nextInt();
+13
+    int lb=T*x/100;
+14
+   System.out.printf("%d\n",lb);
+15
+    int RT=T-lb;
+16
+    int BB=RT*y/100;
+17
+    System.out.printf("%d\n",BB);
+18
+    int RT1=RT-BB;
+19
+    int pirateshare=RT1/3;
+20
+    System.out.printf("%d",pirateshare);
+21
+​
+22
+    }
+23
+}
