@@ -1,0 +1,90 @@
+Write a program to generate the following series 7, 5, 8, 6, 9….
+
+Input Format
+
+Read n value
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print series
+
+Sample Input 0
+
+5
+Sample Output 0
+
+7 5 8 6 9
+Sample Input 1
+
+10
+Sample Output 1
+
+7 5 8 6 9 7 10 8 11 9
+Submissions: 188
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int n;
+10
+        n=s.nextInt();
+11
+        int i,r1=7,r2=5;
+12
+    for(i=0;i<n;i++)
+13
+    {
+14
+        if(i%2==0)
+15
+        {
+16
+            System.out.printf("%d ",r1);
+17
+            r1 +=1;
+18
+        }
+19
+        else
+20
+        {
+21
+            System.out.printf("%d ",r2);
+22
+            r2 +=1;
+23
+        }
+24
+    }
+25
+        
+26
+​
+27
+    }
+28
+}
