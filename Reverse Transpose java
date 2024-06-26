@@ -1,0 +1,90 @@
+There is a treasure full of gold and diamonds. Jack Sparrow successfully reached the cave with his black pearl. He is reading a hint on a box that he need to tilt it 90 degree clock wise. But he don't know what to tilt. Finally when he reaches the door there is a dial pad. He remember the hint in the box and he opened the box where it has numbers printed in N x N form. Now he is tilting the same to 90 degree and seeing the numbers. He couldn't see and type on same time. So write a program to print the 2D matrix which will be helpful for him to type easily.
+
+Input Format
+
+Read size of rows and columns Read elements of matrix
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print the matrix as described above
+
+Sample Input 0
+
+3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 0
+
+7 4 1 
+8 5 2 
+9 6 3
+Submissions: 131
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int n=s.nextInt();
+10
+        int a[][]=new int[n][n];
+11
+        int i,j;
+12
+        for(i=0;i<n;i++)
+13
+        {
+14
+            for(j=0;j<n;j++)
+15
+            {
+16
+                a[i][j]=s.nextInt();
+17
+            }
+18
+        }
+19
+        for(j=0;j<n;j++)
+20
+        {
+21
+            for(i=n-1;i>=0;i--){
+22
+                System.out.print(a[i][j]+" ");
+23
+            }
+24
+            System.out.println();
+25
+        }
+26
+        
+27
+    }
+28
+}
