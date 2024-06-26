@@ -1,0 +1,110 @@
+Write a program to find the sum of elements in each row.
+
+Input Format
+
+Integers correspond to the size of rows and columns. Read elements of the array
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Sum of each row in seperate line
+
+Sample Input 0
+
+3
+3
+1 2 3
+7 3 1
+7 4 1
+Sample Output 0
+
+6
+11
+12
+Sample Input 1
+
+4
+3
+1 2 3
+4 5 6
+7 8 9
+4 3 8
+Sample Output 1
+
+6
+15
+24
+15
+Submissions: 180
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+8
+        Scanner s=new Scanner(System.in);
+9
+        int m=s.nextInt();
+10
+        int n=s.nextInt();
+11
+        int a[][]=new int[m][n];
+12
+        int i,j;
+13
+        for(i=0;i<m;i++)
+14
+        {
+15
+            for(j=0;j<n;j++)
+16
+            {
+17
+                a[i][j]=s.nextInt();
+18
+            }
+19
+        }
+20
+            for(i=0;i<m;i++)
+21
+            {
+22
+                int sum=0;
+23
+                for(j=0;j<n;j++){
+24
+                    sum=sum+a[i][j];
+25
+                }
+26
+                System.out.println(sum);
+27
+            }
+28
+                
+29
+        
+30
+    }
+31
+}
