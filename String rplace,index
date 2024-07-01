@@ -1,0 +1,21 @@
+import java.util.*;
+class Test{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str=new String("Sowmya Software Solutions");
+        System.out.println(str);
+        System.out.println(str.replace('S','s'));
+        System.out.println(str.charAt(5));
+        System.out.println(str.indexOf("f"));
+        System.out.println(str.lastIndexOf("o"));
+        
+        
+    }
+}
+Sowmya Software Solutions
+sowmya software solutions
+a
+9
+22
+
+=== Code Execution Successful ===
