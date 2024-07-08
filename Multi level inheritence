@@ -1,0 +1,69 @@
+class Grandfather
+{
+   String gname;
+   int p1;
+   void getGf(String gname,int p1)
+   {
+       this.gname=gname;
+       this.p1=p1;
+   }
+ void showGf()
+{
+       System.out.println("GrandFather name="+gname);
+       System.out.println("GrandFather Property="+p1);
+   }
+   }
+      class Father extends Grandfather
+   {
+       String fname;
+       int p2;
+       void getFather(String fname,int p2)
+       {
+           this.fname=fname;
+           this.p2=p2;
+       }
+       void showFather()
+       {
+            System.out.println("Father name="+fname);
+            System.out.println("Father Property="+p2);
+            System.out.println("father total property="+(p1+p2));
+       }
+   }
+       class Daughter extends Father 
+       {
+          String dname;
+          int p3;
+       void getDaughter(String dname,int p3)
+       {
+           this.dname=dname;
+           this.p3=p3;
+       }
+       void showDaughter()
+       {
+           System.out.println("Daughter name ="+dname);
+           System.out.println("Daughter Property="+p3);
+           System.out.println("Daughter total Property="+(p1+p2+p3));
+       }
+}
+   class Test
+   {
+      public static void main(String []args)
+      {
+          Daughter d1=new Daughter();
+          d1.getGf("rrr",1500000);
+          d1.showGf();
+          d1.getFather("kkk",700000);
+          d1.showFather();
+          d1.getDaughter("sss",500000);
+          d1.showDaughter();
+      }
+   }
+       Your Output
+GrandFather name=rrr
+GrandFather Property=1500000
+Father name=kkk
+Father Property=700000
+father total property=2200000
+Daughter name =sss
+Daughter Property=500000
+Daughter total Property=2700000
