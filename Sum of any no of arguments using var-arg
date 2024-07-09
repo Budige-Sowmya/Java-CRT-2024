@@ -1,0 +1,28 @@
+import java.util.*;
+class Test
+{
+    void add(int ...a)
+    {
+        int s=0;
+        for(int x:a)
+        {
+            s=s+x;
+        }
+        System.out.println(s);
+    }
+    public static void main(String []args)
+    {
+        Test t1=new Test();
+        t1.add(11,53,25);
+        t1.add(55);
+        t1.add(34,78);
+        t1.add(11,22,33,44,55);
+        t1.add();
+    }
+}
+Output:
+89
+55
+112
+165
+0
