@@ -1,0 +1,24 @@
+class Test
+{
+    void show(int a,int b,int c)
+    {
+        System.out.println("3 arg int method");
+    }
+    void show(float a,float b)
+    {
+        System.out.println("2 arg float method");
+    }
+    public static void main(String []args)
+    {
+        Test t1=new Test();
+        t1.show(11,22,33);
+        t1.show(34.7f,12.9f);
+        t1.show(56,33);
+        t1.show('A','B','C');
+    }
+}
+Otput
+3 arg int method
+2 arg float method
+2 arg float method
+3 arg int method
