@@ -1,0 +1,23 @@
+import java.util.*;
+class Test
+{
+    void show(int ...a)
+    {
+        System.out.println("var-arg method"+Arrays.toString(a));
+    }
+    public static void main(String []args)
+    {
+        Test t1=new Test();
+        t1.show(11,53,25);
+        t1.show(55,66,23,88);
+        t1.show(34,78);
+        t1.show(11,22,33,44,55);
+        t1.show();
+    }
+}
+Output:
+var-arg method[11, 53, 25]
+var-arg method[55, 66, 23, 88]
+var-arg method[34, 78]
+var-arg method[11, 22, 33, 44, 55]
+var-arg method[]
